@@ -1,9 +1,9 @@
-import Calendar from "reducers/calendar";
+import Readme from "../components/Readme";
 
 function App() {
   return (
     <div className="app">
-      <Calendar />
+      <Readme />
     </div>
   );
 }
