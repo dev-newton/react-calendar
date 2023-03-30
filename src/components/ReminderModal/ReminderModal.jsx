@@ -83,7 +83,7 @@ const ReminderModal = () => {
           </div>
           <div className="form-row">
             <div className="form-icon"></div>
-            {isForecast && <p>{weatherForecast.days[0].conditions}</p>}
+            {isForecast && <p>{weatherForecast?.days[0].conditions}</p>}
           </div>
         </Form>
         <DeleteOutlined
