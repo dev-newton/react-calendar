@@ -77,13 +77,22 @@ const ReminderModal = () => {
           <div className="form-row">
             <div className="form-icon"></div>
             {/* eslint-disable  */}
-            <a className="btn btn-weather" onClick={getForecast}>
+
+            <button
+              className="btn btn-weather"
+              onClick={getForecast}
+              type="button"
+              style={{
+                backgroundColor: !timeObj || !formData.city ? "grey" : "",
+              }}
+              disabled={!timeObj && !formData.city}
+            >
               Get Weather Forecast
-            </a>
+            </button>
           </div>
           <div className="form-row">
             <div className="form-icon"></div>
-            {isForecast && <p>{weatherForecast?.days[0].conditions}</p>}
+            {isForecast && <p>{weatherForecast?.days[0].temp}°F</p>}
           </div>
         </Form>
         <DeleteOutlined
