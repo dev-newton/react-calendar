@@ -8,7 +8,6 @@ function routes() {
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<App />} />
-        <Route exact path="/calendar" element={<Calendar />} />
       </Routes>
     </BrowserRouter>
   );
